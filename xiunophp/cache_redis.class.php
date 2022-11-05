@@ -19,6 +19,11 @@ class cache_redis {
                 if($this->link) return $this->link;
                 $redis = new Redis;
                 $r = $redis->connect($this->conf['host'], $this->conf['port']);
+				if($this->conf['password']!==null){
+                	if($redis->auth($this->conf['password']) == false){
+                		return $this->error(-1, 'Redis 服务器密码错误。');
+                	}
+                }
                 if(!$r) {
                         return $this->error(-1, '连接 Redis 服务器失败。');
                 }

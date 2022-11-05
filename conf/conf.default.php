@@ -47,6 +47,8 @@ return array (
 		'redis' => array (
 			'host' => 'localhost',
 			'port' => '6379',
+			'password' => 'admin',
+			'database' => '0',
 			'cachepre' => 'bbs_',
 		),
 		'xcache' => array (
