@@ -11288,4 +11288,11 @@ select > option {
   background-color: #fff;
 }
 
+.undersubject {
+	background-color:#c3ccd4;
+	padding-right: .6em;   
+	padding-left: .6em; 
+	border-radius: 10rem;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
