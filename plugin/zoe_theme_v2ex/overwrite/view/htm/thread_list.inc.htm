@@ -57,10 +57,11 @@
 									<span class="date text-grey">•</span>
 									<span class="date text-grey<?php if($_thread['lastuid']) { ?> hidden-sm<?php } ?>"><?php echo $_thread['create_date_fmt'];?></span>
 									<!--{hook thread_list_inc_username_after.htm}-->
-									<span class="date text-grey">•</span>
+									
 									<!--{hook thread_list_inc_lastuid_before.htm}-->
 									<?php if($_thread['lastuid']) { ?>
 									<span>
+										<span class="date text-grey">•</span>
 										<span class="text-grey mx-2">最后回复来自</span>
 										<span class="username text-grey mr-1" uid="<?php echo $_thread['lastuid'];?>"><?php echo $_thread['lastusername'];?></span>
 										<span class="text-grey"><?php echo $_thread['last_date_fmt'];?></span>
